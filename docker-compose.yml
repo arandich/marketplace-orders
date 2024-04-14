@@ -17,7 +17,7 @@ services:
     env_file:
       - './postgres.env'
     networks:
-      - marketplace_network
+      - postgres_network
   marketplace-orders:
     container_name: marketplace-orders
     restart: always
@@ -29,6 +29,7 @@ services:
     env_file:
       - './service.env'
     networks:
+      - postgres_network
       - marketplace_network
 # Volumes.
 volumes:
@@ -38,4 +39,7 @@ volumes:
 # Networks.
 networks:
   marketplace_network:
+    name: marketplace_network
     external: true
+  postgres_network:
+    name: postgres_network
