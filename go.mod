@@ -3,8 +3,8 @@ module github.com/arandich/marketplace-orders
 go 1.22.1
 
 require (
-	github.com/arandich/marketplace-proto v0.0.0-20240413192952-523246342a57
-	github.com/arandich/marketplace-sdk v0.0.0-20240413194724-75ba906db5d7
+	github.com/arandich/marketplace-proto v0.0.0-20240414183126-63a479ab504b
+	github.com/arandich/marketplace-sdk v0.0.0-20240414183437-a1af24d30efc
 	github.com/creasty/defaults v1.7.0
 	github.com/jackc/pgx/v5 v5.5.5
 	github.com/joho/godotenv v1.5.1
